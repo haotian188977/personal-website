@@ -438,14 +438,12 @@ export default function SnakeGame() {
 
             //Canvas
 
-            <canvas
+            <canvas //canva
                 ref={canvasRef}
                 width={CANVAS_SIZE}
-                height={CANVAS_SIZE}
-                className="block"
 		className="
         	    block
-        	    w-[600px]
+        	    w-[600px] //canva size
         	    h-[600px]
                 "
             />
