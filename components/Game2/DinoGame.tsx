@@ -212,7 +212,7 @@ export default function DinoGame(){
 
 
         const ctx =
-            canvas.getContext("2d");
+            canvas.getContext("2d")!;
 
 
         if(!ctx)
