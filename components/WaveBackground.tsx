@@ -12,7 +12,7 @@ export default function WaveBackground() {
     const canvasRef = useRef<HTMLCanvasElement>(null);
 
     useEffect(() => {
-        const canvas = canvasRef.current;
+        const canvas = canvasRef.current!; //not null
         if (!canvas) return;
 
         const ctx = canvas.getContext("2d");
@@ -23,13 +23,13 @@ export default function WaveBackground() {
         let animationId = 0;
         let time = 0;
 
-        // 鼠标当前位置（带缓动）
+        // mouse position with movement
         const mouse = {
             x: window.innerWidth / 2,
             y: window.innerHeight / 2,
         };
 
-        // 鼠标真实位置
+        // mouse real position
         const targetMouse = {
             x: mouse.x,
             y: mouse.y,
@@ -69,7 +69,7 @@ export default function WaveBackground() {
 
             time += 0.0025;
 
-            // 鼠标缓动
+            // mouse movement
             mouse.x += (targetMouse.x - mouse.x) * 0.08;
             mouse.y += (targetMouse.y - mouse.y) * 0.08;
 
@@ -137,9 +137,7 @@ export default function WaveBackground() {
                             time + row * 0.02
                         );
 
-                    // -------------------------
-                    // 鼠标交互
-                    // -------------------------
+                    //mouse interact
 
                     const dx = x - mouse.x;
                     const dy = baseY - mouse.y;
@@ -155,7 +153,7 @@ export default function WaveBackground() {
                             1 - distance / radius
                         );
 
-                    // 平滑衰减
+                    // smooth decrease
                     const strength =
                         influence * influence;
 
@@ -179,9 +177,7 @@ export default function WaveBackground() {
 
                 }
 
-                // -------------------------
-                // 开始绘制
-                // -------------------------
+                // drawing
 
                 ctx.beginPath();
 
@@ -216,11 +212,11 @@ export default function WaveBackground() {
                     );
 
                 }
-                // 最后一小段曲线连接到终点
+                // final curve
                 const last = points[points.length - 1];
                 ctx.lineTo(last.x, last.y);
 
-                // 中间的线更明显，两侧更淡
+                // color change (light at end)
                 const alpha =
                     0.5 + rowFactor * 0.22; //black color as base color, able to change the darkness here
 

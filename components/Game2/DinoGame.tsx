@@ -212,7 +212,7 @@ export default function DinoGame(){
 
 
         const ctx =
-            canvas.getContext("2d")!;
+            canvas.getContext("2d")!; //not null
 
 
         if(!ctx)
@@ -238,9 +238,7 @@ export default function DinoGame(){
 
 
 
-            /*
-                背景
-            */
+            //background
 
 
             ctx.fillStyle =
@@ -256,9 +254,7 @@ export default function DinoGame(){
 
 
 
-            /*
-                地面
-            */
+            //ground
 
 
             ctx.strokeStyle =
