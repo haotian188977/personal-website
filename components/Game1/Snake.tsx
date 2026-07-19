@@ -393,11 +393,11 @@ export default function SnakeGame() {
 
     return (
 
-        <div //window size(w = canva + 20, h = canva + 120)
+        <div //window size(w = canva + 20, h = canva + 70)
             className="
                 relative
                 w-[620px] 
-                h-[720px]
+                h-[670px]
                 border
                 border-black
                 rounded-xl
@@ -406,7 +406,7 @@ export default function SnakeGame() {
             "
         >
 
-            //top
+            {/*top*/}
 
             <div
                 className="
@@ -436,7 +436,7 @@ export default function SnakeGame() {
 
             </div>
 
-            //Canvas
+            {/*Canvas*/}
 
             <canvas //canva
                 ref={canvasRef}
@@ -449,7 +449,7 @@ export default function SnakeGame() {
                 "
             />
 		
-	    //button for phone
+	    {/*button for phone*/}
 
 	    {
 	        gameState === "playing" && (
@@ -457,7 +457,7 @@ export default function SnakeGame() {
 	            <div
 
 	                className="
-	                    h-16
+	                    h-50
 	                    flex
 	                    items-center
 	                    justify-center
@@ -495,10 +495,11 @@ export default function SnakeGame() {
 	                            active:scale-90
 	                            transition
 	                            touch-none
+				    text-black
 	                        "
 
 	                    >
-	                        ↑
+	                        w
 
 	                    </button>
 
@@ -523,11 +524,12 @@ export default function SnakeGame() {
 	                            active:scale-90
 	                            transition
 	                            touch-none
+				    text-black
 	                        "
 
 	                    >
 
-	                        ←
+	                        a
 
 	                    </button>
 
@@ -549,11 +551,12 @@ export default function SnakeGame() {
  	                            active:scale-90
  	                            transition
 	                            touch-none
+				    text-black
 	                        "
 
 	                    >
 
-	                        ↓
+	                        s
 
 	                    </button>
 
@@ -575,11 +578,12 @@ export default function SnakeGame() {
  	                            active:scale-90
 	                            transition
 	                            touch-none
+				    text-black
 	                        "
 
 	                    >
 
-	                        →
+	                        d
 
 	                    </button>
 
@@ -591,7 +595,7 @@ export default function SnakeGame() {
 	        )
 	    }
 
-            //overlay
+            {/*overlay*/}
 
             {
                 gameState !== "playing" && (
