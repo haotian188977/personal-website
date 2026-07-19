@@ -441,7 +441,8 @@ export default function SnakeGame() {
             <canvas //canva
                 ref={canvasRef}
                 width={CANVAS_SIZE}
-		className="
+		height={CANVAS_SIZE}
+		className=" //fix the size of the canvas (because the calculation caused error when display canva)
         	    block
         	    w-[600px] //canva size
         	    h-[600px]
