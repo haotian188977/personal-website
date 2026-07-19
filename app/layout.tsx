@@ -30,7 +30,7 @@ export default function RootLayout({
     >
       <head>
 	<meta name="color-scheme" content="light"/>
-            </head>
+      </head>
       <body className="min-h-full flex flex-col">
 	  <Header />
           {children}

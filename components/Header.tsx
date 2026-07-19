@@ -1,55 +1,72 @@
 import Link from 'next/link';
+
 export default function Header() {
     return (
-	<nav className="flex justify-between items-center px-8 py-5 border-b">
+        <nav
+            className="
+                flex
+                justify-between
+                items-center
+                px-8
+                py-5
+                bg-black
+                text-white
+                border-b
+                border-black
+            "
+        >
 
             <Link 
-            href="/"
-            className="text-xl font-bold navButton"
+                href="/"
+                className="
+                    text-xl
+                    font-bold
+                    navButton
+                "
             >
-            Haotian
+                Haotian
             </Link>
 
 
             <div className="flex gap-6">
 
                 <Link 
-		href="/Awards"
-		className="navButton"
-		>
+                    href="/Awards"
+                    className="navButton"
+                >
                     Awards
                 </Link>
-		
-		<Link 
-		href="/Experience"
-		className="navButton"
-		>
+
+                <Link 
+                    href="/Experience"
+                    className="navButton"
+                >
                     Experience
                 </Link>
 
                 <Link 
-		href="/Changelog"
-		className="navButton"
-		>
+                    href="/Changelog"
+                    className="navButton"
+                >
                     Changelog
                 </Link>
 
                 <Link 
-		href="/Playground"
-		className="navButton"
-		>
+                    href="/Playground"
+                    className="navButton"
+                >
                     Playground
                 </Link>
 
                 <Link 
-		href="/Link"
-		className="navButton"
-		>
+                    href="/Link"
+                    className="navButton"
+                >
                     Link
                 </Link>
 
             </div>
 
-</nav>
+        </nav>
     );
 }
