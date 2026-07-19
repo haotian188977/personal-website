@@ -15,7 +15,7 @@ export default function WaveBackground() {
         const canvas = canvasRef.current!; //not null
         if (!canvas) return;
 
-        const ctx = canvas.getContext("2d");
+        const ctx = canvas.getContext("2d")!; //not null
         if (!ctx) return;
 
         const noise2D = createNoise2D();
