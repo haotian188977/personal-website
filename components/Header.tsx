@@ -9,10 +9,10 @@ export default function Header() {
                 items-center
                 px-8
                 py-5
-                bg-black
+                bg-blue-700
                 text-white
                 border-b
-                border-black
+                border-blue-400
             "
         >
 

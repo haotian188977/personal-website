@@ -216,12 +216,62 @@ export default function WaveBackground() {
                 const last = points[points.length - 1];
                 ctx.lineTo(last.x, last.y);
 
-                // color change (light at end)
-                const alpha =
-                    0.5 + rowFactor * 0.22; //black color as base color, able to change the darkness here
+                // color change
+                const colorPosition =
+		    last.x / window.innerWidth;
 
-                ctx.strokeStyle = 
-                    `rgba(0,0,0,${alpha})`;
+		let r;
+		let g;
+		let b;
+		
+		if (colorPosition < 0.5) {
+
+		    const t = colorPosition * 2;
+
+		    r = 0;
+
+		    g = Math.floor(255 * t);
+		
+    		    b = Math.floor(255 * (1 - t));
+		
+		} else {
+
+		    const t = (colorPosition - 0.5) * 2;
+		    
+		    r = Math.floor(255 * t);
+
+		    g = 255;
+
+		    b = 0;
+		
+		}
+
+		const alpha =
+    		    1;
+
+		const gradient = ctx.createLinearGradient(
+    		    0,
+    		    0,
+    		    window.innerWidth,
+    		    0
+		);
+
+		gradient.addColorStop(
+    		    0,
+    		    `rgba(0,120,255,${alpha})`
+		);
+
+		gradient.addColorStop(
+    		    0.5,
+    		    `rgba(0,220,120,${alpha})`
+		);
+
+		gradient.addColorStop(
+    		    1,
+    		    `rgba(255,220,0,${alpha})`
+		);
+
+		ctx.strokeStyle = gradient;
 
                 ctx.lineWidth =
                     0.8 + rowFactor * 0.5;

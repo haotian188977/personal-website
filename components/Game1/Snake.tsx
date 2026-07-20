@@ -247,10 +247,10 @@ export default function SnakeGame() {
             CANVAS_SIZE
         );
 
-        ctx.fillStyle = "#000000";
-
+        
+	ctx.fillStyle = "#22c55e";
         snake.forEach((part, index) => {
-
+	    
             const x =
                 part.x * CELL_SIZE;
 
@@ -270,6 +270,8 @@ export default function SnakeGame() {
             ctx.fill();
 
         });
+
+	ctx.fillStyle = "#ff0000";
 
         ctx.beginPath();
 
@@ -399,7 +401,7 @@ export default function SnakeGame() {
                 w-[620px] 
                 h-[670px]
                 border
-                border-black
+                border-blue-700
                 rounded-xl
                 //overflow-hidden
                 bg-white
@@ -412,13 +414,13 @@ export default function SnakeGame() {
                 className="
                     h-16
                     border-b
-                    border-black
+                    border-blue-700
                     flex
                     items-center
                     justify-between
                     px-6
                     select-none
-		    text-black
+		    text-blue-700
                 "
             >
 
@@ -489,13 +491,13 @@ export default function SnakeGame() {
 	                            w-12
 	                            h-12
 	                            border
-	                            border-black
+	                            border-blue-700
 	                            rounded-md
 	                            text-xl
 	                            active:scale-90
 	                            transition
 	                            touch-none
-				    text-black
+				    text-blue-700
 	                        "
 
 	                    >
@@ -518,13 +520,13 @@ export default function SnakeGame() {
 	                            w-12
 	                            h-12
 	                            border
-	                            border-black
+	                            border-blue-700
 	                            rounded-md
 	                            text-xl
 	                            active:scale-90
 	                            transition
 	                            touch-none
-				    text-black
+				    text-blue-700
 	                        "
 
 	                    >
@@ -545,13 +547,13 @@ export default function SnakeGame() {
 	                            w-12
 	                            h-12
 	                            border
-	                            border-black
+	                            border-blue-700
 	                            rounded-md
  	                            text-xl
  	                            active:scale-90
  	                            transition
 	                            touch-none
-				    text-black
+				    text-blue-700
 	                        "
 
 	                    >
@@ -572,13 +574,13 @@ export default function SnakeGame() {
 	                            w-12
 	                            h-12
 	                            border
-	                            border-black
+	                            border-blue-700
 	                            rounded-md
 	                            text-xl
  	                            active:scale-90
 	                            transition
 	                            touch-none
-				    text-black
+				    text-blue-700
 	                        "
 
 	                    >
@@ -629,13 +631,13 @@ export default function SnakeGame() {
                                     h-24
                                     rounded-full
                                     border
-                                    border-black
-				    text-black
+                                    border-blue-700
+				    text-blue-700
                                     text-3xl
 
                                     transition
 
-                                    hover:bg-gray-100
+                                    hover:bg-blue-100
 
                                     active:scale-95
                                 "
@@ -647,10 +649,10 @@ export default function SnakeGame() {
                             </button>
 
                             <div
-                                className=" //game over
+                                className=" //game over and play snake
                                     text-5xl
                                     font-medium
-                                    text-gray-700
+                                    text-blue-700
                                 "
                             >
 
@@ -672,7 +674,7 @@ export default function SnakeGame() {
 
                                 <div
                                     className=" //score showed in the end of the game
-                                        text-gray-500
+                                        text-blue-700
                                         text-sm
                                     "
                                 >

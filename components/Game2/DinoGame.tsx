@@ -346,8 +346,8 @@ export default function DinoGame(){
 	    }
 
 
-            ctx.fillStyle =
-                "#000000";
+            ctx.fillStyle = //block
+                "#FFD700";
 		
 	    obstaclesRef.current.forEach(
     		obstacle=>{
@@ -368,6 +368,9 @@ export default function DinoGame(){
 
    		 }
 	    );
+	
+	    ctx.fillStyle = //barriers
+                "#FA0000";
 
 	    obstaclesRef.current.forEach(
     		obstacle=>{
@@ -441,7 +444,7 @@ export default function DinoGame(){
                 w-[720px]
                 h-[360px]
                 border
-                border-black
+                border-blue-700
                 rounded-xl
                 overflow-hidden
                bg-white
@@ -490,12 +493,12 @@ export default function DinoGame(){
                             h-24
                             rounded-full
                             border
-                            border-black
+                            border-blue-700
                             text-3xl
-                            hover:bg-gray-100
+                            hover:bg-blue-100
                             active:scale-95
                             transition
-                            text-black
+                            text-blue-700
                         "
 
                     >
@@ -511,7 +514,7 @@ export default function DinoGame(){
                         className="
                             text-5xl
                             font-normal
-                            text-gray-700
+                            text-blue-700
                         "
 
                     >
@@ -562,8 +565,8 @@ export default function DinoGame(){
                         border-black
                         bg-white
                         text-2xl
-                        text-black
-                        hover:bg-gray-100
+                        text-blue-700
+                        hover:bg-blue-100
                         active:scale-90
                         transition
                     "

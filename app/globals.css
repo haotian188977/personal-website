@@ -47,7 +47,7 @@ body {
 }
 
 .navButton:hover {
-    background-color: rgb(70,70,70);
+    background-color: rgb(10,10,100);
 }
 
 .navButton:active {
@@ -64,7 +64,7 @@ header {
 
     background: black;
 
-    color: white;
+    color: black;
 
     backdrop-filter: blur(12px);
 }

@@ -39,7 +39,7 @@ export default function GameCanvas({
         ctx.fillRect(0, 0, 600, 600);
 
         //--------------------------------
-        // 食物
+        // food
 
         ctx.fillStyle = "#000";
 
@@ -56,7 +56,7 @@ export default function GameCanvas({
         ctx.fill();
 
         //--------------------------------
-        // 蛇
+        // snake
 
         snake.forEach((segment, index) => {
 
