@@ -2,7 +2,7 @@ export default function Home() {
     return (
 	<main>
 	    <video
-		src="/videos/battle.mp4"
+		src="/videos/battle1.mp4"
 		controls
 		className="
 		    w-[800px]
@@ -10,7 +10,57 @@ export default function Home() {
 		    border
 		    border-black
 		"
-	  />
+	   />
+	   <video
+		src="/videos/case1.mp4"
+		controls
+		className="
+		    w-[800px]
+		    rounded-xl
+		    border
+		    border-black
+		"
+	   />
+	   <video
+		src="/videos/guitar1.mp4"
+		controls
+		className="
+		    w-[800px]
+		    rounded-xl
+		    border
+		    border-black
+		"
+	   />
+	   <video
+		src="/videos/line1.mp4"
+		controls
+		className="
+		    w-[800px]
+		    rounded-xl
+		    border
+		    border-black
+		"
+	   />
+	   <video
+		src="/videos/music0.mp4"
+		controls
+		className="
+		    w-[800px]
+		    rounded-xl
+		    border
+		    border-black
+		"
+	   />
+	   <video
+		src="/videos/snake1.mp4"
+		controls
+		className="
+		    w-[800px]
+		    rounded-xl
+		    border
+		    border-black
+		"
+	   />
 	</main>
         );
 }
