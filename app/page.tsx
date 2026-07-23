@@ -8,7 +8,7 @@ export default function Home() {
 		mt-20
 	    ">
 		<img
-        	    src="/picture/test.jpg"
+        	    src="/images/test.jpg"
        		    className="
 			ml-20
             		w-96
