@@ -48,13 +48,13 @@ export default function Home() {
 	    </div>
 	    <div  className="flex justify-center">
 		<img
-                    src="/images/com2.png"
+                    src="/images/c.png"
                     className="w-400 h-150 object-cover rounded-lg border"
                 />
 	    </div>
 	    <div  className="flex justify-center">
 		<img
-                    src="/images/com3.png"
+                    src="/images/c1.png"
                     className="w-400 h-650 object-cover rounded-lg border"
                 />
 	    </div>
