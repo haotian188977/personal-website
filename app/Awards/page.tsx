@@ -35,7 +35,7 @@ export default function Home() {
                         grid
                         grid-cols-2
                         gap-3
-                        w-[500px]
+                        w-[650px]
 			ml-10
 			mr-10
                     "
@@ -43,22 +43,22 @@ export default function Home() {
 
                     <img
                         src="/images/1.jpg"
-                        className="w-100 h-50 object-cover rounded-lg border"
+                        className="w-110 h-75 object-cover rounded-lg border"
                     />
 
                     <img
                         src="/images/2.jpg"
-                        className="w-100 h-50 object-cover rounded-lg border"
+                        className="w-110 h-75 object-cover rounded-lg border"
                     />
 
 		    <img
                         src="/images/11.jpg"
-                        className="w-100 h-50 object-cover rounded-lg border"
+                        className="w-110 h-75 object-cover rounded-lg border"
                     />
 
 		    <img
                         src="/images/12.jpg"
-                        className="w-100 h-50 object-cover rounded-lg border"
+                        className="w-110 h-75 object-cover rounded-lg border"
                     />
 
                 </div>
@@ -106,30 +106,30 @@ export default function Home() {
                         grid
                         grid-cols-2
                         gap-3
-                        w-[500px]
+                        w-[650px]
 			ml-10
-			mr-10
+			mr-50
                     "
                 >
 
                     <img
                         src="/images/3.jpg"
-                        className="w-100 h-50 object-cover rounded-lg border"
+                        className="w-110 h-75 object-cover rounded-lg border"
                     />
 
                     <img
                         src="/images/6.jpg"
-                        className="w-100 h-50 object-cover rounded-lg border"
+                        className="w-110 h-75 object-cover rounded-lg border"
                     />
 
 		    <img
                         src="/images/13.jpg"
-                        className="w-100 h-50 object-cover rounded-lg border"
+                        className="w-110 h-75 object-cover rounded-lg border"
                     />
 
 		    <img
                         src="/images/14.jpg"
-                        className="w-100 h-50 object-cover rounded-lg border"
+                        className="w-110 h-75 object-cover rounded-lg border"
                     />
 
                 </div>
@@ -151,7 +151,7 @@ export default function Home() {
                         grid
                         grid-cols-2
                         gap-3
-                        w-[500px]
+                        w-[650px]
 			ml-10
 			mr-10
                     "
@@ -159,22 +159,22 @@ export default function Home() {
 
                     <img
                         src="/images/15.jpg"
-                        className="w-100 h-50 object-cover rounded-lg border"
+                        className="w-110 h-75 object-cover rounded-lg border"
                     />
 
                     <img
                         src="/images/5.jpg"
-                        className="w-100 h-50 object-cover rounded-lg border"
+                        className="w-110 h-75 object-cover rounded-lg border"
                     />
 
 		    <img
                         src="/images/9.jpg"
-                        className="w-100 h-50 object-cover rounded-lg border"
+                        className="w-110 h-75 object-cover rounded-lg border"
                     />
 
 		    <img
                         src="/images/10.jpg"
-                        className="w-100 h-50 object-cover rounded-lg border"
+                        className="w-110 h-75 object-cover rounded-lg border"
                     />
 
                 </div>

@@ -478,9 +478,12 @@ export default function DinoGame(){
                         items-center
                         justify-center
                         gap-5
-                        bg-white/90
+                        bg-cover
+			bg-center
                     "
-
+		    style={{
+       			 backgroundImage: "url('/images/bean.png')"
+   		    }}
                 >
 
 
@@ -493,12 +496,12 @@ export default function DinoGame(){
                             h-24
                             rounded-full
                             border
-                            border-blue-700
+                            border-red-500
                             text-3xl
-                            hover:bg-blue-100
+                            hover:bg-blue-100/50
                             active:scale-95
                             transition
-                            text-blue-700
+                            text-red-500
                         "
 
                     >
@@ -514,7 +517,7 @@ export default function DinoGame(){
                         className="
                             text-5xl
                             font-normal
-                            text-blue-700
+                            text-red-500
                         "
 
                     >

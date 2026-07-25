@@ -13,18 +13,16 @@ export default function Experiments() {
 	    <h1 className="text-center text-blue-800 text-8xl font-normal font-mono leading-loose" >Game</h1>
 	    <h1 className="text-center text-blue-800 text-5xl font-light font-mono leading-none" >These are some games programmed by me, using TypeScript(JavaScript), HTML Canvas, and CSS.</h1>
 	    <section className="h-[10vh]" />
-	    <h1 className="text-center text-blue-800 text-3xl font-bold font-mono leading-none" >a classical Snake game, use wasd to control the snake, press q to quit the game</h1>
-            <h1 className="text-center text-blue-800 text-3xl font-light font-mono leading-none" >the snake can pass through the border, but it will die when it bites its tail </h1>
-	    <section className="h-[10vh]" />
-            <section className="pb-24 flex justify-center">
+            <section className="pb-24 flex justify-center ml-100">
 		<Snake />
+		<h1 className="text-center text-blue-800 text-3xl font-normal font-mono leading-none ml-20 mr-100 mt-65" >a classical Snake game, use wasd to control the snake, press q to quit the game （the snake can pass through the border, but it will die when it bites its tail）</h1>
 	    </section>
-	    <section className="h-[10vh]" />
-	    <h1 className="text-center text-blue-800 text-3xl font-bold font-mono leading-none" >a Jamp game, use w to control the square</h1>
-	    <h1 className="text-center text-blue-800 text-3xl font-light font-mono leading-none" >try to make the square pass all barriers</h1>
-            <section className="h-[10vh]" />
-	    <section className="pb-24 flex justify-center">
-	    	<DinoGame />
+	    <section className="h-[20vh]" />
+	    <section className="pb-24 flex justify-center mr-10">
+		<h1 className="text-center text-blue-800 text-3xl font-normal font-mono leading-none ml-100 mt-40" >a Jamp game, use w to control the square（try to make the square pass all barriers）</h1>
+		<section className="ml-20 mr-50">
+		    <DinoGame />
+		</section>
 	    </section>
         </main>
     );

@@ -609,8 +609,12 @@ export default function SnakeGame() {
                             flex
                             items-center
                             justify-center
-                            bg-white/90
+                            bg-cover
+			    bg-center
                         "
+		   	style={{
+			     backgroundImage: "url('/images/snake.png')"
+			}}
                     >
 
                         <div
@@ -631,13 +635,13 @@ export default function SnakeGame() {
                                     h-24
                                     rounded-full
                                     border
-                                    border-blue-700
-				    text-blue-700
+                                    border-red-500
+				    text-red-500
                                     text-3xl
 
                                     transition
 
-                                    hover:bg-blue-100
+                                    hover:bg-blue-100/50
 
                                     active:scale-95
                                 "
@@ -652,7 +656,7 @@ export default function SnakeGame() {
                                 className=" //game over and play snake
                                     text-5xl
                                     font-medium
-                                    text-blue-700
+                                    text-red-500
                                 "
                             >
 
@@ -674,7 +678,7 @@ export default function SnakeGame() {
 
                                 <div
                                     className=" //score showed in the end of the game
-                                        text-blue-700
+                                        text-red-500
                                         text-sm
                                     "
                                 >
