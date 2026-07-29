@@ -41,10 +41,11 @@ const CANVAS_WIDTH = 700;
 
 const CANVAS_HEIGHT = 300;
 
-
-
 export default function DinoGame(){
 
+    const obstacleImage = useRef<HTMLImageElement | null>(null);
+
+    const playerImage = useRef<HTMLImageElement | null>(null);
 
     const canvasRef =
         useRef<HTMLCanvasElement>(null);
@@ -156,7 +157,18 @@ export default function DinoGame(){
     }
 
     useEffect(()=>{
+	
+	const img1 = new Image();
+	img1.src = "/images/barrier.png";
+	img1.onload = () => {
+	    obstacleImage.current = img1;
+	};
 
+	const img2 = new Image();
+	img2.src = "/images/s_bean.png";
+	img2.onload = () => {
+	    playerImage.current = img2;
+	};
 
         function handleKeyDown(
              e:KeyboardEvent
@@ -344,32 +356,30 @@ export default function DinoGame(){
 
 
 	    }
-
-
-            ctx.fillStyle = //block
-                "#FFD700";
-		
+	
+	    //barriers
 	    obstaclesRef.current.forEach(
     		obstacle=>{
 
 
-        	    ctx.fillRect(
+        	    if(obstacleImage.current){
 
-            		obstacle.x,
+			ctx.drawImage(
+            		    obstacleImage.current,
+            		    obstacle.x,
+            		    obstacle.y,
+            		    obstacle.width,
+			    obstacle.height
+            		    
+			);
 
-           		obstacle.y,
-
-            		obstacle.width,
-
-            		obstacle.height
-
-        	    );
+        	    }
 
 
    		 }
 	    );
 	
-	    ctx.fillStyle = //barriers
+	    ctx.fillStyle = //
                 "#FA0000";
 
 	    obstaclesRef.current.forEach(
@@ -394,17 +404,18 @@ export default function DinoGame(){
                  }
              );
 
-            ctx.fillRect(
+	    //block
+            if(playerImage.current){
 
-                player.x,
+    		ctx.drawImage(
+        	    playerImage.current,
+        	    player.x,
+        	    player.y,
+        	    player.width,
+        	    player.height
+    		);
 
-                player.y,
-
-                player.width,
-
-                player.height
-
-            );
+	    }
 
 
 

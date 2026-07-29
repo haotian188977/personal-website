@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import TransitionLink from "@/components/Transit/Link";
 
 export default function Header() {
     return (
@@ -16,7 +17,7 @@ export default function Header() {
             "
         >
 
-            <Link 
+            <TransitionLink 
                 href="/"
                 className="
                     text-xl
@@ -25,45 +26,45 @@ export default function Header() {
                 "
             >
                 Haotian
-            </Link>
+            </TransitionLink>
 
 
             <div className="flex gap-6">
 
-                <Link 
+                <TransitionLink 
                     href="/Awards"
                     className="navButton"
                 >
                     Awards
-                </Link>
+                </TransitionLink>
 
-                <Link 
+                <TransitionLink 
                     href="/Experience"
                     className="navButton"
                 >
                     Experience
-                </Link>
+                </TransitionLink>
 
-                <Link 
+                <TransitionLink 
                     href="/Changelog"
                     className="navButton"
                 >
                     Changelog
-                </Link>
+                </TransitionLink>
 
-                <Link 
+                <TransitionLink 
                     href="/Playground"
                     className="navButton"
                 >
                     Playground
-                </Link>
+                </TransitionLink>
 
-                <Link 
+                <TransitionLink 
                     href="/Link"
                     className="navButton"
                 >
                     Link
-                </Link>
+                </TransitionLink>
 
             </div>
 

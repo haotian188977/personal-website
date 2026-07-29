@@ -1,6 +1,7 @@
 import WaveBackground from "@/components/WaveBackground";
 import Snake from "@/components/Game1/Snake";
 import DinoGame from "@/components/Game2/DinoGame";
+import SortingVisualizer from "@/components/Sort/sortV";
 export default function Experiments() {
     return (
         <main className="relative min-h-screen bg-blue-50 overflow-hidden">
@@ -23,6 +24,10 @@ export default function Experiments() {
 		<section className="ml-20 mr-50">
 		    <DinoGame />
 		</section>
+	    </section>
+	    <h1 className="text-center text-blue-800 text-3xl font-normal font-mono leading-none ml-100 mt-40" >a sort algorithm visualizer, the time for different algorithm required to sort a picture can be compared at here（try to make the square pass all barriers）</h1>
+	    <section className="pb-24 flex justify-center">
+    		<SortingVisualizer />
 	    </section>
         </main>
     );
