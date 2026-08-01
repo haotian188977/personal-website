@@ -32,10 +32,10 @@ export default function Header() {
             <div className="flex gap-6">
 
                 <TransitionLink 
-                    href="/Awards"
+                    href="/Education"
                     className="navButton"
                 >
-                    Awards
+                    Education
                 </TransitionLink>
 
                 <TransitionLink 
@@ -46,10 +46,10 @@ export default function Header() {
                 </TransitionLink>
 
                 <TransitionLink 
-                    href="/Changelog"
+                    href="/Activity"
                     className="navButton"
                 >
-                    Changelog
+                    Activity
                 </TransitionLink>
 
                 <TransitionLink 
