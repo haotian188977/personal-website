@@ -25,7 +25,7 @@ export default function ResumePage() {
         <div className="flex flex-col w-[650px] h-[900px] ml-auto shrink-0">
 
           <iframe
-            src="/pdfs/math1.pdf#zoom=page-fit"
+            src="/pdfs/Math1.pdf#zoom=page-fit"
             className="
               w-full
 	      h-full
@@ -37,7 +37,7 @@ export default function ResumePage() {
 	  <section className="h-[5vh]" />
 
           <iframe
-            src="/pdfs/math2.pdf#zoom=page-fit"
+            src="/pdfs/Math2.pdf#zoom=page-fit"
             className="
               w-full
 	      h-full
@@ -64,7 +64,7 @@ export default function ResumePage() {
 	</section>
 	<section>
          <iframe
-          src="/pdfs/teach.pdf"
+          src="/pdfs/Teach.pdf"
           className="
             w-[650px]
             h-[400px]
