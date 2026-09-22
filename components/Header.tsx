@@ -9,14 +9,14 @@ export default function Header() {
                 justify-between
                 items-center
                 px-8
-                py-5
+                py-3
                 bg-blue-700
                 text-white
                 border-b
                 border-blue-400
             "
         >
-
+	  <section className="flex items-center gap-4">
             <TransitionLink 
                 href="/"
                 className="
@@ -28,6 +28,49 @@ export default function Header() {
                 Haotian
             </TransitionLink>
 
+	    <TransitionLink 
+                href="https://github.com/haotian188977/personal-website"
+                className="
+                    text-xl
+                    font-bold
+                    navButton
+                "
+            >
+                <img
+                        src="/images/githubico.png"
+                        className="w-[40px] h-auto object-cover"
+                />
+            </TransitionLink>
+
+	    <TransitionLink 
+                href="https://sites.google.com/tcdsb.ca/haotian-portfolio/"
+                className="
+                    text-xl
+                    font-bold
+                    navButton
+                "
+            >
+                <img
+                        src="/images/site.png"
+                        className="w-[40px] h-auto object-cover"
+                />
+            </TransitionLink>
+
+	    <TransitionLink 
+                href="https://sites.google.com/tcdsb.ca/haotian-gan/"
+                className="
+                    text-xl
+                    font-bold
+                    navButton
+                "
+            >
+                <img
+                        src="/images/site.png"
+                        className="w-[40px] h-auto object-cover"
+                />
+            </TransitionLink>
+
+	  </section>
 
             <div className="flex gap-6">
 

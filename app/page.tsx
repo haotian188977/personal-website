@@ -8,7 +8,7 @@ export default function Home() {
 		mt-20
 	    ">
 		<img
-        	    src="/images/test.jpg"
+        	    src="/images/main.jpg"
        		    className="
 			ml-20
             		w-96
@@ -19,7 +19,7 @@ export default function Home() {
     		/>
 
 		<div>
-	    	    <h1 className="ml-20 mr-20 leading-loose text-front text-white text-7xl font-black font-mono leading-loose" > Hi, my name is Haotian </h1>
+	    	    <h1 className="ml-20 mr-20 leading-loose text-front text-white text-7xl font-black font-mono leading-loose" > Hi, my name is Haotian Gan</h1>
 	    	    <h1 className="ml-20 mr-50 leading-normal text-front text-white text-5xl font-semibold font-mono leading-none" > a student studied in China and Canada with multi-culture environments, interested in computer science, programming, and technology, currently woring toward the goal of becoming a computer engineer </h1>
 		</div>
 	    </div>

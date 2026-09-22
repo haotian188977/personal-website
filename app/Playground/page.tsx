@@ -25,7 +25,7 @@ export default function Experiments() {
 		    <DinoGame />
 		</section>
 	    </section>
-	    <h1 className="text-center text-blue-800 text-3xl font-normal font-mono leading-none ml-100 mt-40 mr-60" >a sort algorithm visualizer, the time for different algorithm required to sort a picture can be compared at here（try to make the square pass all barriers）</h1>
+	    <h1 className="text-center text-blue-800 text-3xl font-normal font-mono leading-none ml-100 mt-40 mr-60" >a sort algorithm visualizer, the time for different algorithm required to sort a picture can be compared at here</h1>
 	    <section className="h-[5vh]" />
 	    <section className="pb-24 flex justify-center">
     		<SortingVisualizer />
